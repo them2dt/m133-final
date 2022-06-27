@@ -1,0 +1,47 @@
+[
+  {
+    "gameUUID": "3247c340-c712-402e-b400-0a23a9368c97",
+    "name": "Call of Duty: Black Ops",
+    "category": "Shooter",
+    "publisher": {
+      "publisherUUID": "ecd86148-5341-43c6-81ed-f3f4595965dc",
+      "publisher": "Activision"
+    }
+  },
+  {
+    "gameUUID": "c746a291-0ef9-4b2a-8268-392b12d636bd",
+    "name": "The Forest",
+    "category": "Survival",
+    "publisher": {
+      "publisherUUID": "606cc4a5-8bfd-4e24-85c1-ecf6b9814712",
+      "publisher": "Endnight Games"
+    }
+  },
+  {
+    "gameUUID": "3247c340-c712-402e-b400-0a23a9368c97",
+    "name": "Super Mario",
+    "category": "Jump N' Run",
+    "publisher": {
+      "publisherUUID": "ecd86148-5341-43c6-81ed-f3f4595965dc",
+      "publisher": "Nintendo"
+    }
+  },
+  {
+    "gameUUID": "73bd4187-a5b7-4864-be79-327bb8ed43bf",
+    "name": "FIFA 11",
+    "category": "Sports",
+    "publisher": {
+      "publisherUUID": "06fc334d-7b02-434f-9222-6544d30d8832",
+      "publisher": "Electronic  Arts"
+    }
+  },
+  {
+    "gameUUID": "1a42bc39-9eb3-4f5c-93d2-3c3f9f775f60",
+    "name": "Grand Theft Auto V",
+    "category": "Open-World",
+    "publisher": {
+      "publisherUUID": "f117943a-a5de-4a98-b685-c0b9ee0350b8",
+      "publisher": "Rockstar Games"
+    }
+  }
+]

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="m133-bookshelf:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="54ab44aa-0f04-4d7d-8f27-fc0b912a8a4c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="sortByName" value="true" />
+  </component>
+  <component name="ProjectId" id="2BA5DJNnFhAGOctQJ20hTFWbunX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RunManager">
+    <configuration name="GlassFish 5.0.0" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.0.0" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/Bookshelf-1.0/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="m133-bookshelf:war exploded">
+          <settings />
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="DOMAIN" value="domain1" />
+        <option name="PRESERVE" value="false" />
+        <option name="COMPATIBILITY" value="false" />
+        <option name="VIRTUAL_SERVER" />
+        <option name="USERNAME" value="admin" />
+        <option name="CREDENTIAL_ALIAS" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="GlassFish" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="9009" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="m133-bookshelf:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="GlassfishConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings>
+        <option name="DOMAIN" value="" />
+        <option name="PRESERVE" value="false" />
+        <option name="COMPATIBILITY" value="false" />
+        <option name="VIRTUAL_SERVER" />
+        <option name="USERNAME" value="admin" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="GlassFish" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="9009" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="659" y="273" width="636" height="569" key="#BuildArtifactsBeforeRunChooser" timestamp="1656349004971">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="659" y="273" width="636" height="569" key="#BuildArtifactsBeforeRunChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1656349004971" />
+    <state x="410" y="112" width="1306" height="921" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1656349150336">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="410" y="112" width="1306" height="921" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1656349150336" />
+    <state x="333" y="0" width="1234" height="1040" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1656350403947">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="333" y="0" width="1234" height="1040" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1656350403947" />
+    <state x="637" y="163" width="636" height="719" key="FileChooserDialogImpl" timestamp="1656359390560">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="637" y="163" width="636" height="719" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1656359390560" />
+    <state x="777" y="377" width="366" height="290" key="Github.ShareDialog" timestamp="1656359186610">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="777" y="377" width="366" height="290" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1656359186610" />
+    <state width="1852" height="548" key="GridCell.Tab.0.bottom" timestamp="1656358597422">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1852" height="548" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1656358597422" />
+    <state width="1852" height="464" key="GridCell.Tab.0.bottom/0.0.1920.917@0.0.1920.917" timestamp="1656355884966" />
+    <state width="1852" height="548" key="GridCell.Tab.0.center" timestamp="1656358597421">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1852" height="548" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1656358597421" />
+    <state width="1852" height="464" key="GridCell.Tab.0.center/0.0.1920.917@0.0.1920.917" timestamp="1656355884966" />
+    <state width="1852" height="548" key="GridCell.Tab.0.left" timestamp="1656358597420">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1852" height="548" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1656358597420" />
+    <state width="1852" height="464" key="GridCell.Tab.0.left/0.0.1920.917@0.0.1920.917" timestamp="1656355884965" />
+    <state width="1852" height="548" key="GridCell.Tab.0.right" timestamp="1656358597421">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1852" height="548" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1656358597421" />
+    <state width="1852" height="464" key="GridCell.Tab.0.right/0.0.1920.917@0.0.1920.917" timestamp="1656355884966" />
+    <state width="1852" height="548" key="GridCell.Tab.1.bottom" timestamp="1656358597424">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1852" height="548" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1656358597424" />
+    <state width="1852" height="464" key="GridCell.Tab.1.bottom/0.0.1920.917@0.0.1920.917" timestamp="1656355884967" />
+    <state width="1852" height="548" key="GridCell.Tab.1.center" timestamp="1656358597423">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1852" height="548" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1656358597423" />
+    <state width="1852" height="464" key="GridCell.Tab.1.center/0.0.1920.917@0.0.1920.917" timestamp="1656355884967" />
+    <state width="1852" height="548" key="GridCell.Tab.1.left" timestamp="1656358597423">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1852" height="548" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1656358597423" />
+    <state width="1852" height="464" key="GridCell.Tab.1.left/0.0.1920.917@0.0.1920.917" timestamp="1656355884967" />
+    <state width="1852" height="548" key="GridCell.Tab.1.right" timestamp="1656358597424">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1852" height="548" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1656358597424" />
+    <state width="1852" height="464" key="GridCell.Tab.1.right/0.0.1920.917@0.0.1920.917" timestamp="1656355884967" />
+    <state width="1852" height="434" key="GridCell.Tab.2.bottom" timestamp="1656351052805">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1852" height="434" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1656351052805" />
+    <state width="1852" height="434" key="GridCell.Tab.2.center" timestamp="1656351052804">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1852" height="434" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1656351052804" />
+    <state width="1852" height="434" key="GridCell.Tab.2.left" timestamp="1656351052803">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1852" height="434" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1656351052803" />
+    <state width="1852" height="434" key="GridCell.Tab.2.right" timestamp="1656351052804">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1852" height="434" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1656351052804" />
+    <state width="1852" height="434" key="GridCell.Tab.3.bottom" timestamp="1656351052806">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1852" height="434" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1656351052806" />
+    <state width="1852" height="434" key="GridCell.Tab.3.center" timestamp="1656351052805">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1852" height="434" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1656351052805" />
+    <state width="1852" height="434" key="GridCell.Tab.3.left" timestamp="1656351052805">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1852" height="434" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1656351052805" />
+    <state width="1852" height="434" key="GridCell.Tab.3.right" timestamp="1656351052806">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1852" height="434" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1656351052806" />
+    <state x="696" y="39" width="518" height="967" key="RollbackChangesDialog" timestamp="1656349234632">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="696" y="39" width="518" height="967" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1656349234632" />
+    <state x="214" y="0" width="1482" height="1040" key="SettingsEditor" timestamp="1656359721509">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="214" y="0" width="1482" height="1040" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1656359721509" />
+    <state x="355" y="130" width="1200" height="785" key="Vcs.Push.Dialog.v2" timestamp="1656359152442">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="355" y="130" width="1200" height="785" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1656359152442" />
+    <state x="678" y="402" width="563" height="241" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1656339321659">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="678" y="402" width="563" height="241" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1656339321659" />
+    <state x="997" y="165" width="835" height="874" key="find.popup" timestamp="1656358652150">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="997" y="165" width="835" height="874" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1656358652150" />
+    <state x="1044" y="43" width="835" height="874" key="find.popup/0.0.1920.917@0.0.1920.917" timestamp="1656355600460" />
+  </component>
+</project>

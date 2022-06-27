@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta content="Maruthan Thanabalasingam" name="author"/>
+    <meta content="FG ICT - Bildungszentrum Zürichsee" name="copyright"/>
+    <meta content="Gamelibrary" name="project"/>
+    <meta content="game form login" name="description"/>
+    <title>Log in</title>
+</head>
+<body>
+<form action="" id="loginForm" name="loginForm">
+    <h3>Log in</h3>
+    <div id="message" style="color: red;"></div>
+    <table>
+        <tr>
+            <td>username</td>
+            <td><input id="username" maxlength="41" minlength="2" name="username" required size="30" type="text"/></td>
+        </tr>
+        <tr>
+            <td>password</td>
+            <td><input id="password" maxlength="31" minlength="5" name="password" required size="30" type="password"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="logon" type="submit">log in</button>
+            </td>
+        </tr>
+    </table>
+</form>
+<script src="./js/jquery-3.6.0.min.js"></script>
+<script src="./js/login.js"></script>
+</body>
+</html>

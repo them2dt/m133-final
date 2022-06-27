@@ -1,0 +1,14 @@
+[
+  {
+    "userUUID": "71d87d26-91f7-11eb-a8b3-0242ac130003",
+    "username": "maruthan",
+    "password": "12345",
+    "role": "admin"
+  },
+  {
+    "userUUID": "7c583188-91f7-11eb-a8b3-0242ac130003",
+    "username": "guest",
+    "password": "12345",
+    "role": "guest"
+  }
+]
