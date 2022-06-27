@@ -1,0 +1,1372 @@
+{
+	"info": {
+		"_postman_id": "bf519d18-9bd2-4923-a979-5e39f6c2ad58",
+		"name": "gamelibrary",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15762168"
+	},
+	"item": [
+		{
+			"name": "MS1",
+			"item": [
+				{
+					"name": "LU04.99 Restore data Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Bookshelf-1.0/resource/test/restore",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Bookshelf-1.0",
+								"resource",
+								"test",
+								"restore"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Testservice",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Bookshelf-1.0/resource/test/test",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Bookshelf-1.0",
+								"resource",
+								"test",
+								"test"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "gamelibrary",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"validate response\", function() {",
+									"    pm.response.to.be.json; ",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Bookshelf-1.0/resource/game/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Bookshelf-1.0",
+								"resource",
+								"game",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read Game",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"validate response\", function() {",
+									"    pm.response.to.be.json;",
+									"    const responseJson = pm.response.json();",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Bookshelf-1.0/resource/game/read?uuid=3247c340-c712-402e-b400-0a23a9368c97",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Bookshelf-1.0",
+								"resource",
+								"game",
+								"read"
+							],
+							"query": [
+								{
+									"key": "uuid",
+									"value": "3247c340-c712-402e-b400-0a23a9368c97"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read unknown Game",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(404);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Bookshelf-1.0/resource/game/read?uuid=3247c340-ffff-402e-b400-0a23a9368c97",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Bookshelf-1.0",
+								"resource",
+								"game",
+								"read"
+							],
+							"query": [
+								{
+									"key": "uuid",
+									"value": "3247c340-ffff-402e-b400-0a23a9368c97"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read Game with invalid uuid",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(400);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Bookshelf-1.0/resource/game/read?uuid=3247c340-xyzq-402e-b400-0a23a9368c97",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Bookshelf-1.0",
+								"resource",
+								"game",
+								"read"
+							],
+							"query": [
+								{
+									"key": "uuid",
+									"value": "3247c340-xyzq-402e-b400-0a23a9368c97"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alle Publisher",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"validate response\", function() {",
+									"    pm.response.to.be.json;",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Bookshelf-1.0/resource/publisher/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Bookshelf-1.0",
+								"resource",
+								"publisher",
+								"list"
+							],
+							"query": [
+								{
+									"key": "uuid",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read Publisher",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"validate response\", function() {",
+									"    pm.response.to.be.json;",
+									"    const responseJson = pm.response.json();",
+									"    pm.expect(responseJson.publisher).to.eql(\"Activision\");",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Bookshelf-1.0/resource/publisher/read?uuid=ecd86148-5341-43c6-81ed-f3f4595965dc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Bookshelf-1.0",
+								"resource",
+								"publisher",
+								"read"
+							],
+							"query": [
+								{
+									"key": "uuid",
+									"value": "ecd86148-5341-43c6-81ed-f3f4595965dc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read unknown Publisher",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(404);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Bookshelf-1.0/resource/publisher/read?uuid=fff86148-5341-43c6-81ed-f3f4595965dc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Bookshelf-1.0",
+								"resource",
+								"publisher",
+								"read"
+							],
+							"query": [
+								{
+									"key": "uuid",
+									"value": "fff86148-5341-43c6-81ed-f3f4595965dc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read Publisher with invalid uuid",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(400);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Bookshelf-1.0/resource/publisher/read?uuid=fff86148-5341-43c6-81ed",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Bookshelf-1.0",
+								"resource",
+								"publisher",
+								"read"
+							],
+							"query": [
+								{
+									"key": "uuid",
+									"value": "fff86148-5341-43c6-81ed"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MS2",
+			"item": [
+				{
+					"name": "LU04.1 Insert game",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Newgame",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "shooter",
+									"type": "text"
+								},
+								{
+									"key": "publisherUUID",
+									"value": "ecd86148-5341-43c6-81ed-f3f4595965dc",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/Bookshelf-1.0/resource/game/create?uuid=3258c340-c712-402e-b400-0a23a9368c97",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Bookshelf-1.0",
+								"resource",
+								"game",
+								"create"
+							],
+							"query": [
+								{
+									"key": "uuid",
+									"value": "3258c340-c712-402e-b400-0a23a9368c97"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LU04.2 Update game",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "gameUUID",
+									"value": "c746a291-0ef9-4b2a-8268-392b12d636bd",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "newgame",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "shooter",
+									"type": "text"
+								},
+								{
+									"key": "publisherUUID",
+									"value": "ecd86148-5341-43c6-81ed-f3f4595965dc",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/Bookshelf-1.0/resource/game/update?uuid=c746a291-0ef9-4b2a-8268-392b12d636bd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Bookshelf-1.0",
+								"resource",
+								"game",
+								"update"
+							],
+							"query": [
+								{
+									"key": "uuid",
+									"value": "c746a291-0ef9-4b2a-8268-392b12d636bd"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LU04.3 Update unknown game",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "gameUUID",
+									"value": "0046a291-0ef9-4b2a-8268-392b12d636bd",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Newgame",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "shooter",
+									"type": "text"
+								},
+								{
+									"key": "publisherUUID",
+									"value": "ecd86148-5341-43c6-81ed-f3f4595965dc",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/Bookshelf-1.0/resources/game/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Bookshelf-1.0",
+								"resources",
+								"game",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LU04.4 Update game with invalid uuid",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(400);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "gameUUID",
+									"value": "XXXXa291-0ef9-4b2a-8268-392b12d636bdXXAXAXXAXAX",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "NewBook",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "shooter",
+									"type": "text"
+								},
+								{
+									"key": "publisherUUID",
+									"value": "ecd86148-5341-43c6-81ed-f3f4595965dc",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/Bookshelf-1.0/resource/game/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Bookshelf-1.0",
+								"resource",
+								"game",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LU04.5 Delete game",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Bookshelf-1.0/resource/game/delete?uuid=3247c340-c712-402e-b400-0a23a9368c97",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Bookshelf-1.0",
+								"resource",
+								"game",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "uuid",
+									"value": "3247c340-c712-402e-b400-0a23a9368c97"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LU04.6 Delete unknown game",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(404);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Bookshelf-1.0/resource/game/delete?uuid=3247c340-ffff-402e-b400-0a23a9368c97",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Bookshelf-1.0",
+								"resource",
+								"game",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "uuid",
+									"value": "3247c340-ffff-402e-b400-0a23a9368c97"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LU04.9 Verify updates",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"validate response\", function() {",
+									"    pm.response.to.be.json;",
+									"    pm.expect(pm.response.text()).to.include(\"Activision\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Bookshelf-1.0/resource/game/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Bookshelf-1.0",
+								"resource",
+								"game",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LU04.10 Insert Publisher",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "publisher",
+									"value": "Activision",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/Bookshelf-1.0/resource/publisher/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Bookshelf-1.0",
+								"resource",
+								"publisher",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LU04.11 Update Publisher",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "publisher",
+									"value": "Nintendo",
+									"type": "text"
+								},
+								{
+									"key": "publisherUUID",
+									"value": "606cc4a5-8bfd-4e24-85c1-ecf6b9814712",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/Bookshelf-1.0/resource/publisher/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Bookshelf-1.0",
+								"resource",
+								"publisher",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LU04.12  Delete Publisher not allowed",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(409);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Bookshelf-1.0/resource/publisher/delete?uuid=06fc334d-7b02-434f-9222-6544d30d8832",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Bookshelf-1.0",
+								"resource",
+								"publisher",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "uuid",
+									"value": "06fc334d-7b02-434f-9222-6544d30d8832"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LU04.13 Delete game",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Bookshelf-1.0/resource/game/delete?uuid=73bd4187-a5b7-4864-be79-327bb8ed43bf",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Bookshelf-1.0",
+								"resource",
+								"game",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "uuid",
+									"value": "73bd4187-a5b7-4864-be79-327bb8ed43bf"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LU04.14  Delete Publisher",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Bookshelf-1.0/resource/publisher/delete?uuid=06fc334d-7b02-434f-9222-6544d30d8832",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Bookshelf-1.0",
+								"resource",
+								"publisher",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "uuid",
+									"value": "06fc334d-7b02-434f-9222-6544d30d8832"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LU04.19 Verify updates",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"validate response\", function() {",
+									"    pm.response.to.be.json;",
+									"    pm.expect(pm.response.text()).to.include(\"Activision\");",
+									"    pm.expect(pm.response.text()).to.include(\"Nintendo\");",
+									"    pm.expect(pm.response.text()).not.to.include(\"Electronic Arts\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Bookshelf-1.0/resource/publisher/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Bookshelf-1.0",
+								"resource",
+								"publisher",
+								"list"
+							],
+							"query": [
+								{
+									"key": "uuid",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LU04.99 Restore data",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Bookshelf-1.0/resource/test/restore",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Bookshelf-1.0",
+								"resource",
+								"test",
+								"restore"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MS3",
+			"item": [
+				{
+					"name": "LU07.01 User Logout",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:8080/Bookshelf-1.0/resource/user/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Bookshelf-1.0",
+								"resource",
+								"user",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LU07.01 Guest Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {\r",
+									"    pm.response.to.have.status(401);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "maruthan",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/Bookshelf-1.0/resource/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Bookshelf-1.0",
+								"resource",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LU07.01 All Books",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {\r",
+									"    pm.response.to.have.status(403);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:8080/Bookshelf-1.0/resource/game/list?role=admin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Bookshelf-1.0",
+								"resource",
+								"game",
+								"list"
+							],
+							"query": [
+								{
+									"key": "role",
+									"value": "admin"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LU07.01 User Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "maruthan",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/Bookshelf-1.0/resource/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Bookshelf-1.0",
+								"resource",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LU07.01 All Books",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"validate response\", function() {\r",
+									"    pm.response.to.be.json;\r",
+									"    pm.expect(pm.response.text()).to.include(\"name\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:8080/Bookshelf-1.0/resource/game/list?role=admin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Bookshelf-1.0",
+								"resource",
+								"game",
+								"list"
+							],
+							"query": [
+								{
+									"key": "role",
+									"value": "admin"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

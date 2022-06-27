@@ -1,0 +1,959 @@
+{
+	"id": "54197f20-7dd7-4a4d-8288-5e1fc84abf9c",
+	"name": "gamelibrary MS3",
+	"timestamp": "2022-06-27T20:37:20.248Z",
+	"collection_id": "15762168-bf519d18-9bd2-4923-a979-5e39f6c2ad58",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 36,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "d27e82e0-f6ca-4ed9-b035-7a3076f10155",
+			"name": "LU04.99 Restore data Copy",
+			"url": "http://localhost:8080/Bookshelf-1.0/resource/test/restore",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status test": true
+			},
+			"testPassFailCounts": {
+				"Status test": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Status test": true
+				}
+			]
+		},
+		{
+			"id": "44fb33cb-77b2-4b65-9f43-1d68e6deeea3",
+			"name": "Testservice",
+			"url": "http://localhost:8080/Bookshelf-1.0/resource/test/test",
+			"time": 13,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status test": true
+			},
+			"testPassFailCounts": {
+				"Status test": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				13
+			],
+			"allTests": [
+				{
+					"Status test": true
+				}
+			]
+		},
+		{
+			"id": "a56af48f-d225-4fe1-9336-a0bf1f4e1a13",
+			"name": "gamelibrary",
+			"url": "http://localhost:8080/Bookshelf-1.0/resource/game/list",
+			"time": 10,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status test": true,
+				"validate response": true
+			},
+			"testPassFailCounts": {
+				"Status test": {
+					"pass": 1,
+					"fail": 0
+				},
+				"validate response": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				10
+			],
+			"allTests": [
+				{
+					"Status test": true,
+					"validate response": true
+				}
+			]
+		},
+		{
+			"id": "b5e7c7c3-fef9-4bb4-b353-0801996c8def",
+			"name": "Read Game",
+			"url": "http://localhost:8080/Bookshelf-1.0/resource/game/read?uuid=3247c340-c712-402e-b400-0a23a9368c97",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status test": true,
+				"validate response": true
+			},
+			"testPassFailCounts": {
+				"Status test": {
+					"pass": 1,
+					"fail": 0
+				},
+				"validate response": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status test": true,
+					"validate response": true
+				}
+			]
+		},
+		{
+			"id": "6ecad12e-512d-4fdc-8868-1b487707f0e5",
+			"name": "Read unknown Game",
+			"url": "http://localhost:8080/Bookshelf-1.0/resource/game/read?uuid=3247c340-ffff-402e-b400-0a23a9368c97",
+			"time": 13,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status test": true
+			},
+			"testPassFailCounts": {
+				"Status test": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				13
+			],
+			"allTests": [
+				{
+					"Status test": true
+				}
+			]
+		},
+		{
+			"id": "783815e6-07b0-4a57-a9b6-6bfd7c6bf9dc",
+			"name": "Read Game with invalid uuid",
+			"url": "http://localhost:8080/Bookshelf-1.0/resource/game/read?uuid=3247c340-xyzq-402e-b400-0a23a9368c97",
+			"time": 11,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status test": true
+			},
+			"testPassFailCounts": {
+				"Status test": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				11
+			],
+			"allTests": [
+				{
+					"Status test": true
+				}
+			]
+		},
+		{
+			"id": "0f5fffa3-eccb-4c71-a4bb-3df3d9c2f21c",
+			"name": "Alle Publisher",
+			"url": "http://localhost:8080/Bookshelf-1.0/resource/publisher/list",
+			"time": 11,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status test": true,
+				"validate response": true
+			},
+			"testPassFailCounts": {
+				"Status test": {
+					"pass": 1,
+					"fail": 0
+				},
+				"validate response": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				11
+			],
+			"allTests": [
+				{
+					"Status test": true,
+					"validate response": true
+				}
+			]
+		},
+		{
+			"id": "34c3ce18-6a2f-4e2c-9317-0704ebb37e84",
+			"name": "Read Publisher",
+			"url": "http://localhost:8080/Bookshelf-1.0/resource/publisher/read?uuid=ecd86148-5341-43c6-81ed-f3f4595965dc",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status test": true,
+				"validate response": true
+			},
+			"testPassFailCounts": {
+				"Status test": {
+					"pass": 1,
+					"fail": 0
+				},
+				"validate response": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status test": true,
+					"validate response": true
+				}
+			]
+		},
+		{
+			"id": "b0b17bab-5469-4761-a59e-e6bd547a7aa0",
+			"name": "Read unknown Publisher",
+			"url": "http://localhost:8080/Bookshelf-1.0/resource/publisher/read?uuid=fff86148-5341-43c6-81ed-f3f4595965dc",
+			"time": 5,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status test": true
+			},
+			"testPassFailCounts": {
+				"Status test": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status test": true
+				}
+			]
+		},
+		{
+			"id": "29790130-cf37-4a35-a4de-106ed3a21da3",
+			"name": "Read Publisher with invalid uuid",
+			"url": "http://localhost:8080/Bookshelf-1.0/resource/publisher/read?uuid=fff86148-5341-43c6-81ed",
+			"time": 11,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status test": true
+			},
+			"testPassFailCounts": {
+				"Status test": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				11
+			],
+			"allTests": [
+				{
+					"Status test": true
+				}
+			]
+		},
+		{
+			"id": "5c29fc97-1115-4421-9ebb-1d558e50f49d",
+			"name": "LU04.1 Insert game",
+			"url": "http://localhost:8080/Bookshelf-1.0/resource/game/create?uuid=3258c340-c712-402e-b400-0a23a9368c97",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status test": true
+			},
+			"testPassFailCounts": {
+				"Status test": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Status test": true
+				}
+			]
+		},
+		{
+			"id": "2558fb05-51da-4feb-90d7-a577af9d245a",
+			"name": "LU04.2 Update game",
+			"url": "http://localhost:8080/Bookshelf-1.0/resource/game/update?uuid=c746a291-0ef9-4b2a-8268-392b12d636bd",
+			"time": 10,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status test": true
+			},
+			"testPassFailCounts": {
+				"Status test": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				10
+			],
+			"allTests": [
+				{
+					"Status test": true
+				}
+			]
+		},
+		{
+			"id": "2a780fef-d594-43d1-9ff0-48b104056918",
+			"name": "LU04.3 Update unknown game",
+			"url": "http://localhost:8080/Bookshelf-1.0/resources/game/update",
+			"time": 6,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Status test": true
+			},
+			"testPassFailCounts": {
+				"Status test": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status test": true
+				}
+			]
+		},
+		{
+			"id": "6ea0f4dc-8268-4ca3-933e-fede98cb856d",
+			"name": "LU04.4 Update game with invalid uuid",
+			"url": "http://localhost:8080/Bookshelf-1.0/resource/game/update",
+			"time": 13,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status test": true
+			},
+			"testPassFailCounts": {
+				"Status test": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				13
+			],
+			"allTests": [
+				{
+					"Status test": true
+				}
+			]
+		},
+		{
+			"id": "29a853d6-90e7-4977-8f22-b38321048704",
+			"name": "LU04.5 Delete game",
+			"url": "http://localhost:8080/Bookshelf-1.0/resource/game/delete?uuid=3247c340-c712-402e-b400-0a23a9368c97",
+			"time": 12,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status test": true
+			},
+			"testPassFailCounts": {
+				"Status test": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				12
+			],
+			"allTests": [
+				{
+					"Status test": true
+				}
+			]
+		},
+		{
+			"id": "c17e7480-758b-4eb4-8ca6-dffd4e8062e4",
+			"name": "LU04.6 Delete unknown game",
+			"url": "http://localhost:8080/Bookshelf-1.0/resource/game/delete?uuid=3247c340-ffff-402e-b400-0a23a9368c97",
+			"time": 8,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status test": true
+			},
+			"testPassFailCounts": {
+				"Status test": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Status test": true
+				}
+			]
+		},
+		{
+			"id": "215bf28a-a2ad-4a40-9e15-0a71efe436f9",
+			"name": "LU04.9 Verify updates",
+			"url": "http://localhost:8080/Bookshelf-1.0/resource/game/list",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status test": true,
+				"validate response": true
+			},
+			"testPassFailCounts": {
+				"Status test": {
+					"pass": 1,
+					"fail": 0
+				},
+				"validate response": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status test": true,
+					"validate response": true
+				}
+			]
+		},
+		{
+			"id": "12eae7a5-6820-41ad-a3ad-718e353bf141",
+			"name": "LU04.10 Insert Publisher",
+			"url": "http://localhost:8080/Bookshelf-1.0/resource/publisher/create",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status test": true
+			},
+			"testPassFailCounts": {
+				"Status test": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Status test": true
+				}
+			]
+		},
+		{
+			"id": "05568184-92ad-4899-b2ad-154b1c884634",
+			"name": "LU04.11 Update Publisher",
+			"url": "http://localhost:8080/Bookshelf-1.0/resource/publisher/update",
+			"time": 13,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status test": true
+			},
+			"testPassFailCounts": {
+				"Status test": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				13
+			],
+			"allTests": [
+				{
+					"Status test": true
+				}
+			]
+		},
+		{
+			"id": "560043b5-a083-48c4-a7c4-c3510eee0c12",
+			"name": "LU04.12  Delete Publisher not allowed",
+			"url": "http://localhost:8080/Bookshelf-1.0/resource/publisher/delete?uuid=06fc334d-7b02-434f-9222-6544d30d8832",
+			"time": 6,
+			"responseCode": {
+				"code": 409,
+				"name": "Conflict"
+			},
+			"tests": {
+				"Status test": true
+			},
+			"testPassFailCounts": {
+				"Status test": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status test": true
+				}
+			]
+		},
+		{
+			"id": "07458372-ae9b-4aa6-853d-9328177525b7",
+			"name": "LU04.13 Delete game",
+			"url": "http://localhost:8080/Bookshelf-1.0/resource/game/delete?uuid=73bd4187-a5b7-4864-be79-327bb8ed43bf",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status test": true
+			},
+			"testPassFailCounts": {
+				"Status test": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status test": true
+				}
+			]
+		},
+		{
+			"id": "3b62ae51-6e9e-4c31-b4bf-c0ca60384990",
+			"name": "LU04.14  Delete Publisher",
+			"url": "http://localhost:8080/Bookshelf-1.0/resource/publisher/delete?uuid=06fc334d-7b02-434f-9222-6544d30d8832",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status test": true
+			},
+			"testPassFailCounts": {
+				"Status test": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Status test": true
+				}
+			]
+		},
+		{
+			"id": "ccce0b7c-ad14-48f2-b4a4-39c564d9f2ea",
+			"name": "LU04.19 Verify updates",
+			"url": "http://localhost:8080/Bookshelf-1.0/resource/publisher/list",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status test": true,
+				"validate response": true
+			},
+			"testPassFailCounts": {
+				"Status test": {
+					"pass": 1,
+					"fail": 0
+				},
+				"validate response": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status test": true,
+					"validate response": true
+				}
+			]
+		},
+		{
+			"id": "949da839-985a-474c-af83-0f31b7db42bb",
+			"name": "LU04.99 Restore data",
+			"url": "http://localhost:8080/Bookshelf-1.0/resource/test/restore",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status test": true
+			},
+			"testPassFailCounts": {
+				"Status test": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status test": true
+				}
+			]
+		},
+		{
+			"id": "54a9d791-dc8c-4638-9aa6-e114d9c814db",
+			"name": "LU07.01 User Logout",
+			"url": "http://localhost:8080/Bookshelf-1.0/resource/user/logout",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status test": true
+			},
+			"testPassFailCounts": {
+				"Status test": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Status test": true
+				}
+			]
+		},
+		{
+			"id": "4426f397-393f-46a6-b29b-9591be9004bc",
+			"name": "LU07.01 Guest Login",
+			"url": "http://localhost:8080/Bookshelf-1.0/resource/user/login",
+			"time": 14,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status test": true
+			},
+			"testPassFailCounts": {
+				"Status test": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				14
+			],
+			"allTests": [
+				{
+					"Status test": true
+				}
+			]
+		},
+		{
+			"id": "6df518dc-da28-4cc2-adcb-8bc373afb921",
+			"name": "LU07.01 All Books",
+			"url": "http://localhost:8080/Bookshelf-1.0/resource/game/list?role=admin",
+			"time": 5,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Status test": true
+			},
+			"testPassFailCounts": {
+				"Status test": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status test": true
+				}
+			]
+		},
+		{
+			"id": "539b24fe-d279-4179-be65-7351a148c017",
+			"name": "LU07.01 User Login",
+			"url": "http://localhost:8080/Bookshelf-1.0/resource/user/login",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status test": true
+			},
+			"testPassFailCounts": {
+				"Status test": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Status test": true
+				}
+			]
+		},
+		{
+			"id": "dce04297-448f-417b-8aab-70a5800b29f1",
+			"name": "LU07.01 All Books",
+			"url": "http://localhost:8080/Bookshelf-1.0/resource/game/list?role=admin",
+			"time": 11,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status test": true,
+				"validate response": true
+			},
+			"testPassFailCounts": {
+				"Status test": {
+					"pass": 1,
+					"fail": 0
+				},
+				"validate response": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				11
+			],
+			"allTests": [
+				{
+					"Status test": true,
+					"validate response": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 259,
+	"collection": {
+		"requests": [
+			{
+				"id": "d27e82e0-f6ca-4ed9-b035-7a3076f10155",
+				"method": "GET"
+			},
+			{
+				"id": "44fb33cb-77b2-4b65-9f43-1d68e6deeea3",
+				"method": "GET"
+			},
+			{
+				"id": "a56af48f-d225-4fe1-9336-a0bf1f4e1a13",
+				"method": "GET"
+			},
+			{
+				"id": "b5e7c7c3-fef9-4bb4-b353-0801996c8def",
+				"method": "GET"
+			},
+			{
+				"id": "6ecad12e-512d-4fdc-8868-1b487707f0e5",
+				"method": "GET"
+			},
+			{
+				"id": "783815e6-07b0-4a57-a9b6-6bfd7c6bf9dc",
+				"method": "GET"
+			},
+			{
+				"id": "0f5fffa3-eccb-4c71-a4bb-3df3d9c2f21c",
+				"method": "GET"
+			},
+			{
+				"id": "34c3ce18-6a2f-4e2c-9317-0704ebb37e84",
+				"method": "GET"
+			},
+			{
+				"id": "b0b17bab-5469-4761-a59e-e6bd547a7aa0",
+				"method": "GET"
+			},
+			{
+				"id": "29790130-cf37-4a35-a4de-106ed3a21da3",
+				"method": "GET"
+			},
+			{
+				"id": "5c29fc97-1115-4421-9ebb-1d558e50f49d",
+				"method": "POST"
+			},
+			{
+				"id": "2558fb05-51da-4feb-90d7-a577af9d245a",
+				"method": "PUT"
+			},
+			{
+				"id": "2a780fef-d594-43d1-9ff0-48b104056918",
+				"method": "PUT"
+			},
+			{
+				"id": "6ea0f4dc-8268-4ca3-933e-fede98cb856d",
+				"method": "PUT"
+			},
+			{
+				"id": "29a853d6-90e7-4977-8f22-b38321048704",
+				"method": "DELETE"
+			},
+			{
+				"id": "c17e7480-758b-4eb4-8ca6-dffd4e8062e4",
+				"method": "DELETE"
+			},
+			{
+				"id": "215bf28a-a2ad-4a40-9e15-0a71efe436f9",
+				"method": "GET"
+			},
+			{
+				"id": "12eae7a5-6820-41ad-a3ad-718e353bf141",
+				"method": "POST"
+			},
+			{
+				"id": "05568184-92ad-4899-b2ad-154b1c884634",
+				"method": "PUT"
+			},
+			{
+				"id": "560043b5-a083-48c4-a7c4-c3510eee0c12",
+				"method": "DELETE"
+			},
+			{
+				"id": "07458372-ae9b-4aa6-853d-9328177525b7",
+				"method": "DELETE"
+			},
+			{
+				"id": "3b62ae51-6e9e-4c31-b4bf-c0ca60384990",
+				"method": "DELETE"
+			},
+			{
+				"id": "ccce0b7c-ad14-48f2-b4a4-39c564d9f2ea",
+				"method": "GET"
+			},
+			{
+				"id": "949da839-985a-474c-af83-0f31b7db42bb",
+				"method": "GET"
+			},
+			{
+				"id": "54a9d791-dc8c-4638-9aa6-e114d9c814db",
+				"method": "DELETE"
+			},
+			{
+				"id": "4426f397-393f-46a6-b29b-9591be9004bc",
+				"method": "POST"
+			},
+			{
+				"id": "6df518dc-da28-4cc2-adcb-8bc373afb921",
+				"method": "GET"
+			},
+			{
+				"id": "539b24fe-d279-4179-be65-7351a148c017",
+				"method": "POST"
+			},
+			{
+				"id": "dce04297-448f-417b-8aab-70a5800b29f1",
+				"method": "GET"
+			}
+		]
+	}
+}
